@@ -1,0 +1,81 @@
+body{
+    background-image: url("./arbol-de-cerezo.avif");
+    background-position: 50% 50%;
+    font-family: sans-serif;
+    margin: 0;
+}
+header{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+h3{
+    text-rendering: optimizeLegibility;
+    -webkit-text-stroke-width:thin;
+    padding-left: 10px;
+    color:orange
+}
+li{
+    padding-left: 10px;
+    color:indigo;
+}
+li a{
+    text-decoration: none;
+}
+li a:hover{
+    color:goldenrod;
+}
+nav{
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+a.logo{
+    text-decoration: none;
+    color:darkmagenta;
+}
+a img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    margin-left: 10px;
+}
+nav a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+nav a:hover{
+    color:goldenrod;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+.vine{
+    list-style-image: url("./pet-ico.png");
+    list-style-position: inside;
+    text-rendering: optimizeLegibility;
+    -webkit-text-stroke-width:thin;
+}
+.bus{
+    list-style-image: url("./cer-ico.png");
+    list-style-position: inside;
+    text-rendering: optimizeLegibility;
+    -webkit-text-stroke-width:thin;
+}

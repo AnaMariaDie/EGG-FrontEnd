@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<!-- Bootstrap se maneja con contenedores y los estilos los otorga a traves de las clases -->
+<!-- bg indica fondo / d-flex es la flexibilidad que la centra / row es linea / col es columna (puede ocupar 1 a 12 espacios) -->
+<!-- para modificar color de texto es por text / con opacity logramos un gradiente del color elegido -->
+<!-- m es el margen que puede ir de 1 (4px) a 5 (48px) top(t = arriba) bottom(b = abajo) start(s = izquierda) end(e = derecha) -->
+<!-- p es padding que puede ir de 1 a 5 (0 por defecto) -->
+<!-- para el borde primero debemos indicarlo y luego modificar su anchura -->
+<!-- d-flex es flexible al espacio de la pagina, en cambio row ocupa todo el espacio disponible hasta el tamaño maximo que viene 
+    por defecto. si al flex le agregamos inline (d-inline-flex) lo que logramos es que se tome como el tamaño de la fila lo que 
+    tenga escrito dentro. Si a un contenedor lo usamos con d-flex sera flexible y los elementos dentro tendran su propio tamaño. 
+    Si indicamos que este contenedor es flex-row los elementos adaptables que contengan se moveran dentro de la fila, pero si 
+    indicamos flex-column los elementos seran flexibles en columna. Usamos align-items-center para centrar elementos o arriba con 
+    start, etc-->
+    <!-- Texto: si a un p le agregamos la class="h1" se escribe el tento como si fuera un h1. Si usamos class display(1 a 6) tendremos
+    otro tipo de letra y tamaño. O con fs-1 a 6. Si usamos la class text-muted el color de la letra se torna gris. text-center centra los
+    textos (se puede usar con start y end) -->
+    <!-- Para modificar el tipo de letra se hace con la class fw-bold para negrita, light para mas finita o fst-italic para cursiva.
+    Espacio de texto: lh-l texto normal, sm (espaciado pequeño), large(mas espacio entre lineas) -->
+
+    <body class="d-inline-flex flex-column">
+    <div class="container bg-info bg-opacity-25x border border-1 mt-3 ms-5">
+        <h1 class="d-flex justify-content-center text-primary mt-4 pt-2">Encabezado de la Pagina Web</h1>
+        <p class="row p-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reiciendis doloremque repellat a
+            distinctio iste iusto necessitatibus eos accusantium amet excepturi voluptatem, quasi reprehenderit expedita vitae. 
+            Iusto vero iure culpa tempora nisi consectetur, dignissimos doloremque blanditiis possimus autem nobis cumque nesciunt,
+            in magnam porro libero, inventore aspernatur nemo neque ex!</p>
+    </div>
+    <div class="container bg-warning bg-opacity-50 border border-1 mt-3 ms-5 mb-5">
+        <h2 class="d-flex justify-content-center text-success my-4 pt-2">Encabezado de Menor Jerarquia</h2>
+        <p class="col-12 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nemo, earum tempore illum qui
+            impedit quis cumque error fugit, possimus sint doloribus fuga, ut deleniti.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

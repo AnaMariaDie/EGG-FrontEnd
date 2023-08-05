@@ -1,0 +1,23 @@
+body 
+div {
+    color:black
+}
+section{
+    color:indigo
+}
+label{
+    color:rgb(84, 25, 139)
+}
+.input{
+    border-color: gray;
+    background-color: rgb(235, 166, 106);
+}
+button{
+    background-color:burlywood;
+}
+button:hover{
+    color:cadetblue;
+}
+::placeholder{
+    color:brown;
+}

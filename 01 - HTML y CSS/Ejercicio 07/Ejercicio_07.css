@@ -1,0 +1,18 @@
+body{
+    background-color:bisque;
+}
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    font-family:cursive;
+}
+p{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:x-large;
+    color:rebeccapurple;
+}
+ol{
+    text-align: left;
+    font-family:cursive;
+    font-size: x-large;
+}

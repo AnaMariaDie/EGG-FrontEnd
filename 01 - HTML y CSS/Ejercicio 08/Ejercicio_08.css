@@ -1,0 +1,11 @@
+a:link{
+    color:red;
+    font-size: x-large;
+}
+a:hover{
+    color:white;
+    background-color: red;
+}
+a:visited{
+    color:#CCC;
+}

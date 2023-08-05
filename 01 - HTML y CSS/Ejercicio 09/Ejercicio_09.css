@@ -1,0 +1,43 @@
+h2{
+    color:darkcyan;
+}
+h3{
+    color:blue;
+}
+p.last{
+    color:rgb(139, 102, 10);
+}
+th.rojo{
+    color:red;
+    font-weight: bold;
+}
+th.amarillo{
+    color:gold;
+    font-weight: bold;
+}
+td.green{
+    color:green;
+}
+strong.amarillo{
+    color:gold;
+    font-weight: bold;
+}
+strong.first{
+    color:red;
+    font-weight: bold;
+}
+strong.purple{
+    color:blueviolet;
+}
+strong.violet{
+    color:darkviolet;
+}
+u.red{
+    color:red;
+}
+u.green{
+    color:darkgreen;
+}
+i.cursive{
+    color:blue;
+}

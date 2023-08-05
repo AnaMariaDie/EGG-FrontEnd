@@ -1,0 +1,66 @@
+table{
+    border: 2px solid #000;
+    border-collapse: collapse;
+    margin-left: 20px;
+    transition: all .5s;
+}
+th{
+    padding: 5px;
+    /*background-color: #333;*/
+}
+.borde{
+    border: 2px solid #000;
+    border-collapse: collapse;
+    width: 400px;
+    cellpadding: 15px;
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: #fffccc;
+}
+tr:nth-child(odd){
+    background-color:rgb(239, 194, 238);
+}
+tr:hover{
+    background-color:rgb(247, 224, 97);
+    color:blue;
+    cursor: pointer;
+    transition: all .5s;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+#back{
+    background-image: url("./fondo_gris.gif");
+}
+#euro{
+    background-color: #e6f3ff;
+    background-image: url("./euro.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    align-items: center;
+    padding-left: 30px;
+}
+#dolar{
+    background-color: #e6f3ff;
+    background-image: url("./dolar.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    align-items: center;
+    padding-left: 30px;
+}
+#libra{
+    background-color: #e6f3ff;
+    background-image: url("./libra.png");
+    background-repeat: no-repeat; 
+    background-position: 10px;   
+    align-items: center;
+    padding-left: 30px;
+}
+#yen{
+    background-color: #e6f3ff;
+    background-image: url("./yen.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    align-items: center;
+    padding-left: 30px;
+}

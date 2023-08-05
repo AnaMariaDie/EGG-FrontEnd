@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            background-color: rgb(87, 187, 184);
+        }
+    </style>
+    <link rel="stylesheet" href="./archivo02.css">
+</head>
+
+<body>
+    <div id="formulario">
+        <form action="/controlador-registro" method="POST" class="form-registro" id="form-registro"
+            enctype="multipart/form-data"><!--mailto:mail@mail.com-->
+            <section>
+                <h1><strong>Datos Personales</strong></h1>
+                <div class="personal-data">
+                    <label for="nombre"><strong>Nombre y Apellido</strong></label><br>
+                    <input type="text" class="input input-text" name="nombre" required placeholder="Pedro Garcia" />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="gender"><strong>Genero</strong></label><br>
+                    <input name="gender" type="radio" class="input" value="fem">FEMENINO</input>
+                    <input name="gender" type="radio" class="input" value="masc">MASCULINO</input>
+                    <input name="gender" type="radio" class="input" value="no-bin">NO BINARIO</input>
+                    <input name="gender" type="radio" class="input" value="otro">OTRO</input>
+                </div>
+                <br>
+                <div class="personal-data">
+                    <label for="edad"><strong>Edad</strong></label><br>
+                    <input type="number" class="input" name="edad" required placeholder="18" />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="mail"><strong>Email</strong></label><br>
+                    <input type="email" class="input" name="mail" required placeholder="fulano@fulano.com" />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="clave" class="clave"><strong>Contraseña</strong></label><br>
+                    <input type="password" class="input" name="clave" required pattern=".{8,}"
+                        placeholder="Ingrese al menos 8 dígitos" />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="telefono"><strong>Teléfono</strong></label><br>
+                    <input type="number" class="input" name="telefono" required placeholder="12345678" />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="pais"><strong>País</strong></label><br>
+                    <select name="pais" required id="pais" class="input">
+                        <option value="arg">ARGENTINA</option>
+                        <option value="bol">BOLIVIA</option>
+                        <option value="brz">BRAZIL</option>
+                        <option value="chi">CHILE</option>
+                        <option value="uru">URUGUAY</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="image"><strong>Imagen de perfil</strong></label> <br>
+                    <input type="file" class="input" name="image" />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="fecha-nac"><strong>Fecha de Nacimiento</strong></label><br>
+                    <input type="date" name="fecha-nac" min="1930-01-01" max="2020-06-20" required />
+                </div>
+            </section>
+            <section>
+                <h4><strong>Conocimientos de IT</strong></h4>
+                <div class="form-group">
+                    <label for="knowledge"><strong>Marque los que corresponden</strong></label>
+                    <label for=""><strong>Tecnologias</strong></label><br>
+                    <input type="checkbox" name="java" class="input" value="jav">JAVA</input><br>
+                    <input type="checkbox" name="python" class="input" value="pyt">PYTHON</input><br>
+                    <input type="checkbox" name="html" class="input" value="html">HTML</input><br>
+                    <input type="checkbox" name="css" class="input" value="css">CSS</input><br>
+                    <input type="checkbox" name="c#" class="input" value="c#">C#</input><br>
+                    <input type="checkbox" name="javascript" class="input" value="jscript">JAVASCRIPT</option><br>
+                    <input type="checkbox" name="c++" class="input" value="c++">C++</input> <br>
+                </div>
+                <div>
+                    <label for="coment"><strong>Ingrese un Comentario</strong></label><br>
+                    <textarea name="coment" cols="30" rows="10"></textarea>
+                </div>
+            </section>
+    </div>
+    <br>
+    <button type="submit" class="link btn"><strong>Registrarme</strong></button>
+    </form>
+    </div>
+</body>
+
+</html>
