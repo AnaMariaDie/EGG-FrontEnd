@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 02</title>
+</head>
+
+<body>
+    <h1>Titulo 01</h1>
+    <script>
+        /*2. Conocido el número en matemática PI π, pedir al usuario que ingrese el valor del radio
+de una circunferencia y calcular y mostrar por pantalla el área y perímetro. Recuerde que
+para calcular el área y el perímetro se utilizan las siguientes fórmulas:
+area = PI * radio2
+perimetro = 2 * PI * radio*/
+        let radio = prompt("Ingresa un valor para el radio de una circunferencia",
+            "(puede ser un numero entero)");
+        let area = Math.PI * Math.pow(radio, 2);
+        let perimetro = 2 * (Math.PI * radio);
+        confirm(`El area del circulo es: ${area}
+El perimetro del circulo es: ${perimetro}`);
+    </script>
+</body>
+
+</html>

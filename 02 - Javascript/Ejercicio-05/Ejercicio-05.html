@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 05</title>
 </head>
+
 <body>
     <h1>Titulo 01</h1>
-    <script src="script-05.js"></script>
+    <script>/*5. Construir un programa que simule un menú de opciones para realizar las cuatro
+    operaciones aritméticas básicas (suma, resta, multiplicación y división) con dos valores
+    numéricos enteros. El usuario, además, debe especificar la operación con el primer
+    carácter de la operación que desea realizar: ‘S' o ‘s’ para la suma, ‘R’ o ‘r’ para la resta, ‘M’
+    o ‘m’ para la multiplicación y ‘D’ o ‘d’ para la división.*/
+        let n1 = prompt("Ingresa un numero entero", "(ejemplo 10)");
+        let n2 = prompt("Ingresa otro numero entero", "(ejemplo 5)");
+        let op = prompt("Ingrese una letra para realizar la operacion:\nS(suma)\nR(resta)\nM(multiplicacion)\nD(division)");
+        let result;
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+        switch (op.toUpperCase()) {
+            case "S":
+                result = sumar(n1, n2);
+                alert(`El resultado ${n1} + ${n2} = ${result}`);
+                break;
+            case "R":
+                result = restar(n1, n2);
+                alert(`El resultado ${n1} - ${n2} = ${result}`);
+                break;
+            case "M":
+                result = multiplicar(n1, n2);
+                alert(`El resultado ${n1} * ${n2} = ${result}`);
+                break;
+            case "D":
+                result = dividir(n1, n2);
+                alert(`El resultado ${n1} / ${n2} = ${result}`);
+                break;
+            default:
+                alert("Opcion Invalida");
+                break;
+        };
+
+        function sumar(num1, num2) {
+            let re = num1 + num2;
+            return re;
+        };
+        function restar(num1, num2) {
+            let re = num1 - num2;
+            return re;
+        };
+        function multiplicar(num1, num2) {
+            let re = num1 * num2;
+            return re;
+        };
+        function dividir(num1, num2) {
+            let re = num1 / num2;
+            return re;
+        };
+    </script>
 </body>
+
 </html>

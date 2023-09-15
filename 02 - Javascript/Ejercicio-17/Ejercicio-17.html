@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+</head>
+
+<body>
+    <h1>Titulo</h1>
+    <script>
+        /*17. Realizar un programa que elimine los dos últimos elementos de un array. Mostrar el
+resultado*/
+        let fill = (a) => {
+            for (let i = 0; i < 5; i++) {
+                a.push(Math.floor(Math.random() * 100));
+            }
+            console.log(a);
+        };
+        let a = [];
+        window.onload = fill(a);
+        alert(`Array con todos los elementos: ${a.join()}`);
+        a.pop();
+        a.pop();
+        alert(`Array con dos elementos ya eliminados: ${a.join()}`);
+    </script>
+</body>
+
+</html>

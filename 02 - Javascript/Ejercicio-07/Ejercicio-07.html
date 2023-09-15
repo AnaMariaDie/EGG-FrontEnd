@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 07</title>
+</head>
+
+<body>
+    <h1>Titulo 01</h1>
+    <script>/*7. Escriba un programa en el cual se ingrese un valor límite positivo, y a continuación
+    solicite números al usuario hasta que la suma de los números introducidos supere el
+    límite inicial.*/
+        let limite = prompt("Ingrese un valor maximo", "Ejemplo: 50");
+        limite = parseInt(limite);
+        let num;
+        let sum = 0;
+        do {
+            num = parseInt(prompt("Ingrese un numero entero"));
+            sum += num;
+            alert(`Llevamos una suma de: ${sum}`);
+        } while (sum <= limite);
+        alert(`Hemos superado el valor limite ${limite}, llegamos a: ${sum}`);
+    </script>
+</body>
+
+</html>

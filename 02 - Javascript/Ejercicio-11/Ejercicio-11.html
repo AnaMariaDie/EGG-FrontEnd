@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+
+<body>
+    <h1>Titulo 1</h1>
+    <p>todavia no hay nada</p>
+    <script>/*11. Escribir una función que reciba un String y devuelva la palabra más larga.
+    String Ejemplo: “Guia de JavaScript”
+    Resultado esperado : “JavaScript”*/
+        window.onload = beggin;
+
+        function beggin() {
+            let frase = prompt("Escriba una frase");
+            let findWord = longestWord(frase);
+            document.body.innerHTML = `
+            <h2>La palabra mas larga es:</h2>
+            <p>${findWord}</p>
+            <p>${findWord}</p>
+            <p>${findWord}</pid=>
+            `;
+        }
+
+        function longestWord(frase) {
+            let array = frase.split(" ");
+            let findWord = array[0];
+            for (let i = 1; i < array.length; i++) {
+                if (array[i].length > findWord.length) {
+                    findWord = array[i];
+                }
+            }
+            return findWord;
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+</head>
+
+<body>
+    <h1>Titulo</h1>
+    <!-- Otra forma de hacerlo
+    <h1>USO DE FLAT Y MAP</h1>
+    <p id ="p1">ARRAY 1: </p>
+    <p id ="p2">ARRAY 2: </p> -->
+    <script>
+        /*20. Realizar un programa que obtenga la siguiente matriz [[3], [6], [9], [12], [15]] y devuelve y muestre el siguiente array [6, 9, 12, 15, 18].*/
+        let matriz = [[3], [6], [9], [12], [15]];
+        let result = matriz.map(e => e[0]);
+        function create(matriz) {
+            let e0 = parseInt(matriz.shift());
+            result.push(e0 + result[result.length - 1]);
+            return result;
+        }
+        create(matriz);
+        console.log("Matriz original: " + matriz);
+        console.log("Matriz resultante: " + result);
+
+// Otra forma de hacerlo con Flat Map
+// let arr = [];
+// for(let i = 0; i < 1; i++){
+//     for(let i = 0; i < 5; i++){
+//     arr[i] = [(i+1)*3];
+//     }
+// }
+// console.log(arr);
+// let arr2 = arr.flat();
+// let arr3 = arr2.map(function(e){
+//     return e = e + 3;});
+// console.log(arr3);
+// document.getElementById("p1").innerText += (" " + arr);
+// document.getElementById("p2").innerText += (" " + arr3);
+    </script>
+</body>
+
+</html>

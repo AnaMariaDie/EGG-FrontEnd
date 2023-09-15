@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 08</title>
+</head>
+
+<body>
+    <h1>Titulo 01</h1>
+    <script>/*8. Escribir un programa que lea números enteros hasta teclear 0 (cero). Al finalizar el
+    programa se debe mostrar el máximo número ingresado, el mínimo, y el promedio de
+    todos ellos.*/
+        function operaciones() {
+            let max = 0;
+            let min = 0;
+            let sum = 0;
+            let prom;
+            let i = 0;
+            alert("Vamos a sumar numero enteros! (Nos detendremos al ingresar 0)");
+            let num;
+            do {
+                num = parseInt(prompt("Ingrese un numero entero"));
+                if (num == 0) {
+                    break;
+                }
+                if (min != 0 && max != 0) {
+                    if (num < min) {
+                        min = num;
+                    }
+                    if (num > max) {
+                        max = num;
+                    }
+                } else {
+                    min = num;
+                    max = num;
+                }
+                sum += num;
+                i++;
+            } while (num != 0);
+            prom = sum / i;
+            // alert(`Ingresaste un 0\nLos totales son:\nValor Maximo: ${max}
+            // nValor Minimo: ${min}\nPromedio: ${prom}`);
+            document.body.innerHTML = `
+            <h2>Resultados</h2>
+            <ul>
+            <li>Valor Maximo: ${max}</li>
+            <li>Valor Minimo: ${min}</li>
+            <li>Suma de Numeros: ${sum}</li>
+            <li>Promedio: ${prom}</li>
+            </ul>
+        `};
+        document.addEventListener("DOMContentLoaded", operaciones());
+    </script>
+</body>
+
+</html>

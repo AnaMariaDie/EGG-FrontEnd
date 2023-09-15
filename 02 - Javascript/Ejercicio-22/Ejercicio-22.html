@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercicio 22</title>
+</head>
+
+<body>
+    <div style="width: 20%" align="center">
+        <label> Click on the Button and see ... </label>
+    </div>
+    <div style="width: 20%" align="center">
+        <button id="btn" type="button" style="color:beige; background-color:darkslateblue;"> Click Me </button>
+    </div>
+    <div id="div" style="width: 20%" align="center"> Aqui no hay nada </div>
+    <script>
+        /*22. Escribir un programa de JavaScript que al clickear un botón muestre un mensaje a
+elección.*/
+        document.getElementById("btn").onclick = clickButton;
+
+        function clickButton() {
+            const div = document.getElementById("div");
+            div.textContent = "Hiciste click en el boton!!!";
+            div.style.color = "gold";
+            div.style.backgroundColor = "green";
+        }
+    </script>
+</body>
+
+</html>

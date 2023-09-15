@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercicio 25 </title>
+</head>
+
+<body>
+    <!-- Lineas del formulario para Ejercicio 25 -->
+    <form id="form1" onsubmit="getFormValores()">
+        Nombre: <input id="nombre" type="text" name="nombre" value="David"><br>
+        Apellido: <input id="apellido" type="text" name="apellido" value="Beckham"><br>
+        <input id="btnsubmit" type="submit" value="Submit">
+    </form>
+    <script>
+        /*25. Escriba una función de JavaScript para obtener los valores de Nombre y Apellido del
+siguiente formulario.*/
+        const nombre = document.getElementById("nombre");
+        const apellido = document.getElementById("apellido");
+        const btnSubmit = document.getElementById("btnsubmit");
+        const getFormValores = (e) => {
+            alert(`Nombre: ${nombre.value}\nApellido: ${apellido.value}`);
+        }
+    </script>
+</body>
+
+</html>

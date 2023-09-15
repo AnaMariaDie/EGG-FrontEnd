@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+
+<body>
+    <h1>Titulo 1</h1>
+    <p>todavia no hay nada</p>
+    <script>/*10. Escribir una función flecha que reciba una palabra y la devuelva al revés.*/
+        function backWord() {
+            let palabra = prompt("Escribe una palabra");
+            let modPalabra = "";
+            let array = palabra.split("");
+            // Lo hacemos con un bucle e incorporamos un espacio en blanco.
+            for (let i = array.length - 1; i >= 0; i--) {
+                modPalabra += array[i] + " ";
+            }
+            // Lo hacemos con el metodo reverse del array que devuelve un array.
+            modPalabra = array.reverse();
+            document.body.innerHTML = `
+        <h2>La palabra que escribio es:</h2>
+        <p>${palabra}</p>
+        <h2>Ya modificada quedo:</h2>
+        <p>${modPalabra}</p>
+        `};
+        // Usando una Funcion Flecha
+        let array = (palabra) => palabra.split("").reverse().join("");
+        document.addEventListener("DOMContentLoaded", () => {
+            let backWord = array(prompt("Escribe una palabra"));
+            document.body.innerHTML = `
+            <h2>Ya modificada quedo:</h2>
+            <p>${backWord}</p>
+            `});
+    </script>
+</body>
+
+</html>

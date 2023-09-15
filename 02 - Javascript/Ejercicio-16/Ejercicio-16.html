@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+</head>
+
+<body>
+    <h1>Titulo</h1>
+    <script>
+        /*16. Realizar un programa que rellene dos vectores al mismo tiempo, con 5 valores aleatorios
+y los muestre por pantalla.*/
+        let fill = (a, b) => {
+            for (let i = 0; i < 5; i++) {
+                a.push(Math.floor(Math.random() * 100));
+                b.push(Math.floor(Math.random() * 100));
+            }
+            console.log(a, b);
+        };
+        let show = (a) => {
+            for (let i = 0; i < a.length; i++) {
+                console.log(a[i]);
+            }
+        }
+        let a = [];
+        let b = [];
+        window.onload = fill(a, b);
+        show(a);
+        console.log("");
+        show(b);
+    </script>
+</body>
+
+</html>

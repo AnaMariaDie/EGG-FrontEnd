@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 09</title>
+</head>
+
+<body>
+    <h1>Titulo 1</h1>
+    <p>todavia no hay nada</p>
+    <script>/*9. Realizar un programa que pida una frase y el programa deberá mostrar la frase con un
+    espacio entre cada letra. La frase se mostrara así: H o l a. Nota: recordar el
+    funcionamiento de la función Substring().*/
+        function separarFrase() {
+            let frase = prompt("Ingresa una frase");
+            let nuevaFrase = "";
+            let arrayFrase = frase.split("");
+            for (let i = 0; i < arrayFrase.length; i++) {
+                nuevaFrase += arrayFrase[i] + " ";
+            }
+            document.body.innerHTML = `
+            <h3>La Frase que escribio es:</h3>
+            <p>${frase}</p>
+            <h3>La Frase con los espacios quedo:</h3>
+            <p>${nuevaFrase}</p>
+        `};
+        document.addEventListener("DOMContentLoaded", separarFrase());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 06</title>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <div></div>
+<script>
+    /*6. Realizar un programa que, dado un número entero, visualice en pantalla si es par o impar.
+En caso de que el valor ingresado sea 0, se debe mostrar “el número no es par ni impar”.*/
+let numero = prompt("Ingrese un numero entero", "(Ejemplo: 10)");
+numero = parseInt(numero);
+if (numero == 0) {
+    alert("El numero ingresado no es par ni impar");
+} else if (numero % 2 == 0) {
+    alert("El numero ingresado es par");
+} else {
+    alert("El numero ingresado es impar");
+}
+</script>
+</body>
+</html>
